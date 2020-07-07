@@ -1,4 +1,4 @@
-# For setting up an ec2 t3.medium machine with Amazon Linux 2 AMI
+# For setting up the browser server on an ec2 t3.medium machine with Amazon Linux 2 AMI
 
 1) in Route 53, create a record set for the chosen domain name that points to the machine's IP address
 2) ssh to the machine as ec2-user
@@ -21,3 +21,9 @@
 19) sudo yum install mysql-devel
 20) sudo pip install cherrypy
 21) sudo pip install MySQL-python
+
+# For setting up the android server an ec2 t3.medium machine with Amazon Linux 2 AMI
+1) in Route 53, create a record set for the chosen domain name that points to the machine's IP address
+2) ssh to the machine as ec2-user
+3) sudo yum update
+4) curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
