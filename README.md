@@ -27,3 +27,4 @@
 2) ssh to the machine as ec2-user
 3) sudo yum update
 4) curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
+5) sudo yum install -y nodejs
