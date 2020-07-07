@@ -19,8 +19,9 @@
 17) sudo /usr/local/bin/certbot-auto certonly --standalone --debug 
 18) sudo yum install git
 19) sudo yum install mysql-devel
-20) sudo pip install cherrypy
-21) sudo pip install MySQL-python
+20) sudo yum install mysql-devel
+21) sudo pip install cherrypy
+22) sudo pip install MySQL-python
 
 # For setting up the android server an ec2 t3.medium machine with Amazon Linux 2 AMI
 1) in Route 53, create a record set for the chosen domain name that points to the machine's IP address
