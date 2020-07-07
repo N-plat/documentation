@@ -18,7 +18,7 @@
 16) in /usr/local/bin/certbot-auto, replace the line `elif [ -f /etc/issue ] && grep -iq "Amazon Linux" /etc/issue ; then` with `elif grep -i "Amazon Linux" /etc/issue > /dev/null 2>&1 || grep 'cpe:.*:amazon_linux:2' /etc/os-release > /dev/null 2>&1; then`
 17) sudo /usr/local/bin/certbot-auto certonly --standalone --debug 
 18) sudo yum install git
-19) sudo yum install mysql-devel
+19) sudo yum install mysql
 20) sudo yum install mysql-devel
 21) sudo pip install cherrypy
 22) sudo pip install MySQL-python
@@ -29,3 +29,17 @@
 3) sudo yum update
 4) curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
 5) sudo yum install -y nodejs
+6) sudo yum install mysql
+7) sudo yum install mysql-devel
+8) sudo yum install emacs
+9) sudo yum install git
+10) ssh-keygen -t rsa -b 4096
+11) eval $(ssh-agent -s)
+12) ssh-add ~/.ssh/id_rsa
+13) add the public key  ~/.ssh/id_rsa.pub to your github account
+14) wget https://dl.eff.org/certbot-auto
+15) sudo mv certbot-auto /usr/local/bin/certbot-auto
+16) sudo chown root /usr/local/bin/certbot-auto
+17) sudo chmod 0755 /usr/local/bin/certbot-auto
+18) in /usr/local/bin/certbot-auto, replace the line `elif [ -f /etc/issue ] && grep -iq "Amazon Linux" /etc/issue ; then` with `elif grep -i "Amazon Linux" /etc/issue > /dev/null 2>&1 || grep 'cpe:.*:amazon_linux:2' /etc/os-release > /dev/null 2>&1; then`
+19) sudo /usr/local/bin/certbot-auto certonly --standalone --debug 
