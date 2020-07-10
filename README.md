@@ -30,17 +30,18 @@
 4) curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
 5) sudo yum install -y nodejs
 6) sudo npm install mysql
-7) sudo yum install mysql
-8) sudo yum install mysql-devel
-9) sudo yum install emacs
-10) sudo yum install git
-11) ssh-keygen -t rsa -b 4096
-12) eval $(ssh-agent -s)
-13) ssh-add ~/.ssh/id_rsa
-14) add the public key  ~/.ssh/id_rsa.pub to your github account
-15) wget https://dl.eff.org/certbot-auto
-16) sudo mv certbot-auto /usr/local/bin/certbot-auto
-17) sudo chown root /usr/local/bin/certbot-auto
-18) sudo chmod 0755 /usr/local/bin/certbot-auto
-19) in /usr/local/bin/certbot-auto, replace the line `elif [ -f /etc/issue ] && grep -iq "Amazon Linux" /etc/issue ; then` with `elif grep -i "Amazon Linux" /etc/issue > /dev/null 2>&1 || grep 'cpe:.*:amazon_linux:2' /etc/os-release > /dev/null 2>&1; then`
-20) sudo /usr/local/bin/certbot-auto certonly --standalone --debug 
+7) sudo npm install firebase-admin --save
+8) sudo yum install mysql
+9) sudo yum install mysql-devel
+10) sudo yum install emacs
+11) sudo yum install git
+12) ssh-keygen -t rsa -b 4096
+13) eval $(ssh-agent -s)
+14) ssh-add ~/.ssh/id_rsa
+15) add the public key  ~/.ssh/id_rsa.pub to your github account
+16) wget https://dl.eff.org/certbot-auto
+17) sudo mv certbot-auto /usr/local/bin/certbot-auto
+18) sudo chown root /usr/local/bin/certbot-auto
+19) sudo chmod 0755 /usr/local/bin/certbot-auto
+20) in /usr/local/bin/certbot-auto, replace the line `elif [ -f /etc/issue ] && grep -iq "Amazon Linux" /etc/issue ; then` with `elif grep -i "Amazon Linux" /etc/issue > /dev/null 2>&1 || grep 'cpe:.*:amazon_linux:2' /etc/os-release > /dev/null 2>&1; then`
+21) sudo /usr/local/bin/certbot-auto certonly --standalone --debug 
